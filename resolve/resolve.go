@@ -61,9 +61,9 @@ func colorForYear(t time.Time) string {
 	return c
 }
 
-func visitFromStrings(fs []string) *visit {
+func visitFromStrings(fs []string) visit {
 	if len(fs) != 5 {
-		return nil
+		return visit{}
 	}
 
 	var v visit
@@ -78,10 +78,10 @@ func visitFromStrings(fs []string) *visit {
 		v.lat, v.lng, v.address = lookup(v.address)
 	}
 
-	return &v
+	return v
 }
 
-func (v *visit) strings() []string {
+func (v visit) strings() []string {
 	return []string{
 		v.when.Format("2006-01-02"),
 		v.purpose,
@@ -91,7 +91,7 @@ func (v *visit) strings() []string {
 	}
 }
 
-func (v *visit) MarshalJSON() ([]byte, error) {
+func (v visit) MarshalJSON() ([]byte, error) {
 	return json.Marshal(map[string]interface{}{
 		"type": "Feature",
 		"geometry": map[string]interface{}{
@@ -110,7 +110,7 @@ func (v *visit) MarshalJSON() ([]byte, error) {
 	})
 }
 
-type visitList []*visit
+type visitList []visit
 
 func (l visitList) Less(a, b int) bool {
 	if !l[a].when.Equal(l[b].when) {
@@ -135,7 +135,7 @@ func main() {
 	}
 
 	r := csv.NewReader(fd)
-	var visits []*visit
+	var visits []visit
 	in, err := r.Read()
 	for err == nil {
 		visits = append(visits, visitFromStrings(in))
@@ -156,11 +156,7 @@ func main() {
 	w.Flush()
 	fd.Close()
 
-	geojson := map[string]interface{}{
-		"type":     "FeatureCollection",
-		"features": visits,
-	}
-	bs, _ := json.MarshalIndent(geojson, "", "  ")
+	bs, _ := json.MarshalIndent(toGeoJSON(visits), "", "  ")
 
 	fname := strings.Replace(*file, ".csv", ".geojson", 1)
 	fd, err = os.Create(fname)
@@ -169,6 +165,36 @@ func main() {
 	}
 	fd.Write(bs)
 	fd.Close()
+}
+
+func toGeoJSON(vs []visit) map[string]interface{} {
+	byYear := make(map[string][]visit)
+	for _, v := range vs {
+		year := v.when.Format("2006")
+		byYear[year] = append(byYear[year], v)
+	}
+
+	var years []string
+	for year := range byYear {
+		years = append(years, year)
+	}
+	sort.Strings(years)
+
+	var layers []map[string]interface{}
+	for _, year := range years {
+		layers = append(layers, map[string]interface{}{
+			"type":     "FeatureCollection",
+			"features": byYear[year],
+			"properties": map[string]string{
+				"year": year,
+			},
+		})
+	}
+
+	return map[string]interface{}{
+		"type":     "FeatureCollection",
+		"features": layers,
+	}
 }
 
 func lookup(search string) (lat, lng float64, addr string) {
