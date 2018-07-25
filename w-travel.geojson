@@ -3,6 +3,22 @@
     {
       "geometry": {
         "coordinates": [
+          55.2708,
+          25.2048
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-07-01",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "w",
+        "name": "Dubai"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           13.0038,
           55.605
         ],
