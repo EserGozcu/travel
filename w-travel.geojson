@@ -3,32 +3,16 @@
     {
       "geometry": {
         "coordinates": [
-          0,
-          0
+          13.0038,
+          55.605
         ],
         "type": "Point"
       },
       "properties": {
-        "date": "2010-09-01",
+        "date": "2014-11-01",
         "marker-color": "#a6cee3",
         "marker-symbol": "w",
-        "name": ""
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
-          0,
-          52.4064
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "date": "2014-08-01",
-        "marker-color": "#fb9a99",
-        "marker-symbol": "w",
-        "name": "Dubai, UAE"
+        "name": "Malmo"
       },
       "type": "Feature"
     }

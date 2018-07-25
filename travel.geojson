@@ -3,6 +3,22 @@
     {
       "geometry": {
         "coordinates": [
+          13.0038,
+          55.605
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-01",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "w",
+        "name": "Malmo"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           27.1428,
           38.4236
         ],
@@ -10,7 +26,7 @@
       },
       "properties": {
         "date": "2018-07-06",
-        "marker-color": "#a6cee3",
+        "marker-color": "#1f78b4",
         "marker-symbol": "p",
         "name": "Izmir, İzmir, Turkey"
       },
@@ -26,7 +42,7 @@
       },
       "properties": {
         "date": "2018-07-07",
-        "marker-color": "#a6cee3",
+        "marker-color": "#1f78b4",
         "marker-symbol": "p",
         "name": "Seferihisar, Düzce Mahallesi, 35460 Seferihisar/İzmir, Turkey"
       },
@@ -42,7 +58,7 @@
       },
       "properties": {
         "date": "2018-07-08",
-        "marker-color": "#a6cee3",
+        "marker-color": "#1f78b4",
         "marker-symbol": "p",
         "name": "Phocaea, Foça/İzmir, Turkey"
       },
@@ -58,7 +74,7 @@
       },
       "properties": {
         "date": "2018-07-09",
-        "marker-color": "#a6cee3",
+        "marker-color": "#1f78b4",
         "marker-symbol": "p",
         "name": "Ölüdeniz Belediyesi, Ölüdeniz Mahallesi, 48340 Fethiye/Muğla Province, Turkey"
       },
@@ -74,7 +90,7 @@
       },
       "properties": {
         "date": "2018-07-12",
-        "marker-color": "#a6cee3",
+        "marker-color": "#1f78b4",
         "marker-symbol": "p",
         "name": "Mesudiye, Mesudiye Mahallesi, 48900 Datça/Muğla, Turkey"
       },
@@ -90,7 +106,7 @@
       },
       "properties": {
         "date": "2018-07-14",
-        "marker-color": "#a6cee3",
+        "marker-color": "#1f78b4",
         "marker-symbol": "p",
         "name": "Atatürk Mh., Uğur Mumcu Sevgi Yolu, 35920 Selçuk/İzmir, Turkey"
       },
@@ -106,7 +122,7 @@
       },
       "properties": {
         "date": "2018-07-14",
-        "marker-color": "#a6cee3",
+        "marker-color": "#1f78b4",
         "marker-symbol": "p",
         "name": "Bodrum, Muğla Province, Turkey"
       },

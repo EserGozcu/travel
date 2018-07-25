@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="846e5d5d-90ed-4d81-82f7-8ffcd9abcbc3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/p-travel.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/p-travel.geojson" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/travel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/travel.geojson" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +18,8 @@
       <file leaf-file-name="travel.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/travel.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -34,8 +36,8 @@
       <file leaf-file-name="p-travel.geojson" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p-travel.geojson">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="71" column="10" lean-forward="true" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="-466">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -185,13 +187,6 @@
     <entry file="file://$PROJECT_DIR$/travel.geojson">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-travel.geojson">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="71" column="10" lean-forward="true" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resolve/resolve.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2235">
@@ -199,10 +194,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/p-travel.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-466">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/travel.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
