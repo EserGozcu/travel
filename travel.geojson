@@ -1,4 +1,117 @@
 {
-  "features": null,
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          27.1428,
+          38.4236
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-07-06",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "p",
+        "name": "Izmir, İzmir, Turkey"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          26.8344,
+          38.195
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-07-07",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "p",
+        "name": "Seferihisar, Düzce Mahallesi, 35460 Seferihisar/İzmir, Turkey"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          26.7579,
+          38.6704
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-07-08",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "p",
+        "name": "Phocaea, Foça/İzmir, Turkey"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          29.1405,
+          36.5704
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-07-09",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "p",
+        "name": "Ölüdeniz Belediyesi, Ölüdeniz Mahallesi, 48340 Fethiye/Muğla Province, Turkey"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          27.5541,
+          36.6894
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-07-12",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "p",
+        "name": "Mesudiye, Mesudiye Mahallesi, 48900 Datça/Muğla, Turkey"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          27.3681,
+          37.9484
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-07-14",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "p",
+        "name": "Atatürk Mh., Uğur Mumcu Sevgi Yolu, 35920 Selçuk/İzmir, Turkey"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          27.4305,
+          37.0344
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-07-14",
+        "marker-color": "#a6cee3",
+        "marker-symbol": "p",
+        "name": "Bodrum, Muğla Province, Turkey"
+      },
+      "type": "Feature"
+    }
+  ],
   "type": "FeatureCollection"
 }
